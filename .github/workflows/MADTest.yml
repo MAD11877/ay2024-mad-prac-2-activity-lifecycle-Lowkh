@@ -9,7 +9,7 @@ jobs:
     
     steps:
       - name: setupJava
-      - uses: actions/setup-java@v4
+        uses: actions/setup-java@v4
         with: 
           java-version-file: '21'
           
