@@ -8,6 +8,11 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+      - name: setupJava
+      - uses: actions/setup-java@v4
+        with: 
+          java-version-file: '21'
+          
       - name: Checkout Source Codes
         uses: actions/checkout@v2
         
